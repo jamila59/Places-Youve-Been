@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Places-You've-Been-To</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+  @using PlacesBeen.Models;
+
+    <p>Places you have been to:</p>
+    @foreach (Location location in Model)
+    {
+      <li>@location.CityName</li>
+    }
+    <a href="/places/new">Add a new item.</a>
+  </body>
+</html>
